@@ -61,3 +61,6 @@ And finally I just return the view with the collection.
 return view('welcome', ['entries' => $collection]);
 ```
 ![Crawler Screenshot](screenshot.png)
+#### Closing ####
+The default number of entries in the [hacker news site](https://news.ycombinator.com/) is already 30 so there is no need to scrape more than the first page.
+Obviously the code can be improved, specially the request filter part, which can be more dynamic not only to filter but to sort the results. But for the scope of the challenge I prefer to make it simple.
